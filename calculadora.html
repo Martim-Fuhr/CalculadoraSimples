@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+    <h1>Calculadora Simples</h1>
+    <div class="form-group">
+        <div class="calculator">
+            <div class="display">
+                <input type="text" name="display" readonly>
+            </div>        
+            <div class="buttons">
+                <div class="row">
+                    <div class="numbers">                
+                        <div class="row">
+                            <button onclick="digitar(event)">7</button>
+                            <button onclick="digitar(event)">8</button>
+                            <button onclick="digitar(event)">9</button>
+                            <button onclick="digitar(event)">+</button>
+                        </div>
+                        <div class="row">
+                            <button onclick="digitar(event)">4</button>
+                            <button onclick="digitar(event)">5</button>
+                            <button onclick="digitar(event)">6</button>
+                            <button onclick="digitar(event)">-</button>
+                        </div>
+                        <div class="row">
+                            <button onclick="digitar(event)">1</button>
+                            <button onclick="digitar(event)">2</button>
+                            <button onclick="digitar(event)">3</button>
+                            <button onclick="digitar(event)">*</button>
+                        </div>
+                        <div class="row">
+                            <button onclick="digitar(event)">0</button>
+                            <button class="color" onclick="reset()">C</button>
+                            <button onclick="digitar(event)">.</button>
+                            <button onclick="digitar(event)" > / </button>
+                        </div>
+                        <button class="equal" onclick="calcula()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js.js"></script>
+    </div>
+    </body>
+</html>
